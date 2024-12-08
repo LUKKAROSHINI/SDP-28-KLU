@@ -1,0 +1,149 @@
+/* Background and page styling */
+body {
+  background-color: #f9f9f9; /* Dark background color */
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* Container for Admin and User Dashboards */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 1000px;
+  min-height: 600px;
+  background-color: #3c516a; /* Dark container background */
+  border-radius: 20px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5); /* Stronger shadow for contrast */
+  overflow: hidden;
+  padding: 30px; /* Ample padding for better layout */
+  margin: auto;
+}
+
+/* Shared styling for both dashboards */
+.admin-dashboard, .user-dashboard {
+  width: 100%;
+}
+
+h2 {
+  font-size: 26px;
+  color: #fffbfb; /* Light heading color for contrast */
+  margin-bottom: 20px;
+}
+
+/* Form styling for AdminDashboard */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #ffffff; /* White label text */
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #444444; /* Subtle border for dark theme */
+  background-color: #ffffff; /* Dark input background */
+  color: #000000; /* Light input text */
+}
+
+input[type="text"]::placeholder {
+  color: #aaaaaa; /* Lighter placeholder text */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007acc; /* Bright blue button */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #005fa3; /* Darker blue on hover */
+}
+
+/* UserDashboard search section */
+.user-dashboard input[type="text"] {
+  width: calc(100% - 110px);
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #555555; /* Subtle gray border */
+  border-radius: 5px;
+  background-color: #1f232b; /* Matching dark background */
+  color: #ffffff;
+}
+
+.user-dashboard button {
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #4caf50; /* Green button */
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.user-dashboard button:hover {
+  background-color: #388e3c; /* Darker green on hover */
+}
+
+/* Resource list styling */
+.resource-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.resource-card {
+  padding: 20px;
+  background-color: #33373e; /* Slightly lighter card background */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Strong shadow for depth */
+}
+
+.resource-card h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #ffffff; /* White text for headings */
+}
+
+.resource-card p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #dddddd; /* Light gray for descriptions */
+}
+
+.resource-card a {
+  display: inline-block;
+  margin-right: 15px;
+  color: #66c0f4; /* Bright blue link */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.resource-card a:hover {
+  text-decoration: underline;
+}
